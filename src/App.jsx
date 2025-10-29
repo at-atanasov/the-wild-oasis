@@ -3,9 +3,10 @@ import GlobalStyles from "./styles/GlobalStyles";
 import Button from "./ui/Button";
 import Input from "./ui/Input";
 import Heading from "./ui/Heading";
+import Row from "./ui/Row";
 
 const StyledApp = styled.main`
-  background-color: orangered;
+  // background-color: orangered;
   padding: 20px;
 `;
 
@@ -14,14 +15,29 @@ function App() {
     <>
       <GlobalStyles />
       <StyledApp>
-        <Heading as="h1">The world oasis</Heading>
-        <Heading as="h2">Check in and out</Heading>
-        <Heading as="h3">Form</Heading>
-        <Button></Button>
-        <div>
-          <Button>Hello World</Button>
-          <Input />
-        </div>
+        <Row type="vertical">
+          <Row type="horizontal">
+            <Heading as="h1">The world oasis</Heading>
+            <div>
+              <Heading as="h2">Check in and out</Heading>
+              <Heading as="h3">Form</Heading>
+              <Button variation="primary" size="medium">
+                Check In
+              </Button>
+
+              <Button variation="secondary" size="small">
+                Check Out
+              </Button>
+              <Button>Call taxi</Button>
+            </div>
+          </Row>
+          <Row type="vertical">
+            <form>
+              <Input type="number" placeholder="Number of guests" />
+              <Input type="number" placeholder="Number of guests" />
+            </form>
+          </Row>
+        </Row>
       </StyledApp>
     </>
   );
