@@ -1,17 +1,28 @@
+import styled from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import Button from "./ui/Button";
 import Input from "./ui/Input";
+import Heading from "./ui/Heading";
+
+const StyledApp = styled.main`
+  background-color: orangered;
+  padding: 20px;
+`;
 
 function App() {
   return (
     <>
-      <Button></Button>
       <GlobalStyles />
-      <div>
-        <Button>Hello World</Button>
-        <Input />
-      </div>
-      ;
+      <StyledApp>
+        <Heading as="h1">The world oasis</Heading>
+        <Heading as="h2">Check in and out</Heading>
+        <Heading as="h3">Form</Heading>
+        <Button></Button>
+        <div>
+          <Button>Hello World</Button>
+          <Input />
+        </div>
+      </StyledApp>
     </>
   );
 }

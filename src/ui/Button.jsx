@@ -1,6 +1,5 @@
-//import styled, { css } from "styled-components";
-import styled from "styled-components";
-/*
+import styled, { css } from "styled-components";
+
 const sizes = {
   small: css`
     font-size: 1.2rem;
@@ -21,7 +20,7 @@ const sizes = {
   `,
 };
 
- const variations = {
+const variations = {
   primary: css`
     color: var(--color-brand-50);
     background-color: var(--color-brand-600);
@@ -48,7 +47,7 @@ const sizes = {
     }
   `,
 };
-*/
+
 const Button = styled.button`
   font-size: 1.4rem;
   padding: 1.2rem 1.6rem;
