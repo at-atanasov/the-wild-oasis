@@ -83,17 +83,12 @@ function Pagination({ count }) {
   }
 
   if (pageCount <= 1) return null;
+  console.log("currentPage", currentPage);
 
   return (
     <StyledPagination>
       <P>
-        Showing{" "}
-        <span>
-          {(currentPage - 1) * (PAGE_SIZE + 1) === 0
-            ? 1
-            : (currentPage - 1) * (PAGE_SIZE + 1)}
-        </span>{" "}
-        to{" "}
+        Showing <span>{(currentPage - 1) * PAGE_SIZE + 1}</span> to{" "}
         <span>
           {currentPage === pageCount ? count : currentPage * PAGE_SIZE}
         </span>{" "}
