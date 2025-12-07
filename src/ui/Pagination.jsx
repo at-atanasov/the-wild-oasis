@@ -83,7 +83,6 @@ function Pagination({ count }) {
   }
 
   if (pageCount <= 1) return null;
-  console.log("currentPage", currentPage);
 
   return (
     <StyledPagination>
