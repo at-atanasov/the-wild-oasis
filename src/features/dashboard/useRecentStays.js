@@ -4,11 +4,11 @@ import { getStaysAfterDate } from "../../services/apiBookings";
 import { useQuery } from "@tanstack/react-query";
 
 export function useRecentStays() {
-  const [searcParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
-  const numDays = !searcParams.get("last")
+  const numDays = !searchParams.get("last")
     ? 7
-    : Number(searcParams.get("last"));
+    : Number(searchParams.get("last"));
   const queryDate = subDays(new Date(), numDays).toISOString();
 
   const { isLoading, data: stays } = useQuery({
@@ -17,7 +17,7 @@ export function useRecentStays() {
   });
 
   const confirmedStays = stays?.filter(
-    (stay) => stay.status === "checked-in" || "checked-out",
+    (stay) => stay.status === "checked-in" || stay.status === "checked-out",
   );
 
   return { isLoading, stays, confirmedStays, numDays };
