@@ -7,7 +7,6 @@ import {
   HiOutlineHomeModern,
   HiOutlineUsers,
 } from "react-icons/hi2";
-import { HiOutlineSelector } from "react-icons/hi";
 
 const NavList = styled.ul`
   display: flex;
