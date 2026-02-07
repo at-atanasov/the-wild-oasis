@@ -33,6 +33,7 @@ A hotel management web application built with React, Vite, and Supabase. This pr
 | Charts        | Recharts                                       |
 | Date Handling | date-fns                                       |
 
+.
 
 ├── public/ # Static assets
 ├── src/ # Main source files
