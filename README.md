@@ -20,6 +20,7 @@ A hotel management web application built with React, Vite, and Supabase. This pr
 
 💡 Modern React patterns (React Query, React Hook Form, React Router)
 
+
 | Category      | Technology                                     |
 | ------------- | ---------------------------------------------- |
 | Framework     | React                                          |
@@ -32,7 +33,7 @@ A hotel management web application built with React, Vite, and Supabase. This pr
 | Charts        | Recharts                                       |
 | Date Handling | date-fns                                       |
 
-.
+
 ├── public/ # Static assets
 ├── src/ # Main source files
 │ ├── components/ # Reusable UI components
